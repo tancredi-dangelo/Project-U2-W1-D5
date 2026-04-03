@@ -9527,7 +9527,7 @@
       const header = document.querySelector("header");
 
       window.addEventListener("scroll", (event) => {
-        if (window.scrollY >= header.offsetHeight) {
+        if (window.scrollY >= header.offsetHeight - 20) {
           nav.classList.add("scrolled");
         } else {
           nav.classList.remove("scrolled");
