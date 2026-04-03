@@ -47,7 +47,8 @@ header {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  height: 50vh;
+  min-height: 20vh;
+  max-height: 50vh;
   background-color: #ffc017;
   border-bottom: 2px solid rgb(0, 0, 0);
 }
@@ -122,12 +123,12 @@ header > div > div > button {
 }
 
 header > div > div > p {
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 
 header > div > div > button {
-  width: 25%;
-  height: 15%;
+  min-width: 25%;
+  height: 40px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -370,10 +371,6 @@ article > div:nth-of-type(1) * {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    height: 50vh;
-  }
-
   #trending article {
     width: 40%;
     min-width: 250px;
